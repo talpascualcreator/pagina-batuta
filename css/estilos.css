@@ -1,0 +1,1275 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.fixed-nav {
+    background-color: #3498db;
+    color: #ecf0f1;
+    padding: 1em;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.corporation-title {
+    color: #f7f9fa;
+    margin: 0;
+    font-size: 3em;
+    font-family: italic;
+    
+}
+
+.toggle-menu {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    width:30px;
+    height: 3px;
+    background-color: #ecf0f1;
+    margin: 06px 270px 06px ;
+    transition: 0.4s;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-right: 50px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ecf0f1;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #1abc9c;
+}
+
+.content {
+    margin-top: 80px;
+    padding: 20px;
+}
+* Estilos para el carrusel */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    overflow: hidden; /* Evita el desbordamiento horizontal en la pantalla */
+}
+
+.carousel-container {
+    width: 100vw; /* Ancho total de la ventana */
+    height: 100vh; /* Altura total de la ventana */
+    overflow: hidden;
+    margin-top: 80px; /* Agrega margen superior según sea necesario */
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100vw; /* Ancho total de la ventana */
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    height:75%;
+    object-fit:fill; /* Ajusta la imagen para cubrir completamente el contenedor */
+
+    
+}
+
+/* Estilos para el contenido principal */
+main {
+    margin-left: 0; /* Deja espacio para la barra lateral */
+    padding: 20px;
+    background: linear-gradient(to bottom, #ADD8E6 0, #7EC8E3 800px, #5DADE2 1200px, #4682B4 1600px, #3572a3 2000px, #45789c 3000px, #0e456b 3400px, #3e7aa5 5200px );
+}
+
+main {
+    text-align: center;
+}
+
+main h2 {
+    font-size: 28px;
+    margin: 20px 0;
+    color: #333333;
+}
+
+main p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #000;
+    text-align: justify;
+}
+
+.about-us {
+    background-color: transparent; /* Fondo transparente para mostrar el fondo dorado brillante */
+    padding: 50px;
+    text-align: center;
+    color: rgb(17, 1, 1); /* Texto en blanco para destacar sobre el fondo dorado */
+    font-family: Arial, sans-serif; /* Cambia la fuente según tus preferencias */
+}
+
+.about-us h2 {
+    font-size: 35px; /* Tamaño de fuente grande para el título */
+    font-style: italic; /* Texto en cursiva */
+    margin-bottom: 20px;
+}
+
+.about-us h3 {
+    font-size: 30px; /* Tamaño de fuente para los subtítulos */
+    margin-top: 20px; /* Espacio superior */
+    color: gold;
+}
+
+.about-us p {
+    font-size: 20px; /* Tamaño de fuente para el texto principal */
+    line-height: 1.6; /* Espaciado entre líneas */
+    margin: 20px 0; /* Espaciado vertical */
+}
+
+.about-us a {
+    color: #007BFF; /* Enlaces en un tono de azul */
+    text-decoration: none; /* Sin subrayado */
+}
+
+/* Estilos para los enlaces de contacto */
+.about-us a:hover {
+    text-decoration: underline; /* Subrayado al pasar el ratón */
+}
+
+.about {
+    min-height: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 80px;
+    justify-items: center;
+    align-items: center;
+}
+
+.about__img {
+    text-align: center;
+}
+
+.about__img--left {
+    text-align: left;
+}
+
+.about__picture {
+    max-width: 80%;
+    box-shadow: 30px 20px 10px 10px #000;
+    border-radius: 1em;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.about__picture:hover {
+    transform: scale(1.05);
+    box-shadow: 40px 30px 20px 20px #000;
+}
+
+.about__paragraph {
+    margin-bottom: 20px;
+    line-height: 1.5;
+    font-weight: 300;
+}
+
+#alumnos .alumno {
+    display: inline-block;
+    width: calc(25% - 20px);
+    margin: 50px;
+    padding: 10px;
+    background-color: rgba(22, 24, 72, 0.7);
+    border-radius: 10px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    box-sizing: border-box;
+    height: 350px; /* Ajusta la altura según tus preferencias */
+    overflow: hidden; /* Evita que el contenido desborde y mantenga la altura fija */
+}
+
+#alumnos .alumno img {
+    max-width: 100%;
+    border-radius: 50%;
+    height: auto;
+}
+
+#alumnos .alumno p {
+    color: #fff;
+    margin: 20px 0;
+    font-size: 16px;
+}
+
+#alumnos .alumno:hover {
+    background-color: rgb(54, 57, 212);
+}
+
+/* Estilos pagina quienes somo? */
+
+.testimony__item {
+    width: 90%;
+    margin: 0 auto;
+    background: var(--color-secondary);
+    box-shadow: 0 15px 10px rgba(80, 10, 202, 0.5);
+    border-radius: 7px;
+    padding: 30px 25px;
+    color: #4f2ebd;
+    margin-bottom: 50px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.testimony__item:hover {
+    transform: translateY(0);
+    box-shadow: 0 15px 10px rgba(8, 24, 175, 0.5);
+    transform: scale(1.1);
+}
+
+.testimony__person {
+    display: flex;
+    flex-direction: column; /* Cambia la dirección a columna para colocar elementos uno debajo del otro */
+    align-items: center;
+    margin-bottom: 20px;
+    
+}
+
+.testimony__img {
+    width: 100px;
+    min-width: 100px;
+    height: 100px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    margin-bottom: 10px; /* Ajusta el margen inferior de la imagen */
+    transition: transform 0.3s ease-in-out;
+}
+
+.testimony__img:hover {
+    transform: scale(2.1);
+}
+
+.testimony__name {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.testimony__verification {
+    color: #E0AFA0;
+    font-weight: 700;
+}
+
+.testimony__review {
+    font-weight: 300;
+}
+
+.container h1{
+    text-align: center;
+    font-size: 3rem;
+}
+
+
+/*------------------------------------------*/
+.faq-item {
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .faq-question {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .faq-answer {
+    display: none;
+  }
+
+.map-container {
+    width: 100%;
+    max-width: 1300px; /* Establece un ancho máximo para evitar que el mapa se agrande demasiado en pantallas grandes */
+    margin: 0 auto; /* Centra el contenedor */
+}
+/*servicios*/
+#servicios {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    transform-style: preserve-3d;
+    max-width: 1200px; /* Cambiado a max-width */
+    margin: 0 auto; /* Centrar en la pantalla */
+}
+
+#servicios .card1 {
+    position: relative;
+    width: 320px;
+    height: 320px;
+    margin: 20px;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    transition: 1s ease;
+}
+
+#servicios .card1 .box1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: 1s ease;
+}
+
+#servicios .card1:hover .box1 {
+    transform: rotateY(180deg);
+}
+
+#servicios .card1 .box1 .imgex img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#servicios .card1 .box1 .contenido {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #317fd8fa;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    transform: rotateY(180deg);
+}
+
+#servicios .card1 .box1 .contenido div {
+    padding: 20px;
+    background: linear-gradient(45deg, rgb(58, 61, 223), rgb(76, 100, 238));
+    transform: translateZ(100px);
+}
+
+#servicios .card1 .box1 .contenido div h2 {
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+#servicios .card1 .box1 .contenido div p {
+    color: #fff;
+    font-size: 16px;
+}
+
+/* contacto index4*/
+
+#contacto {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+
+  .centered-text {
+    text-align: center; /* Alinea el texto al centro */
+  }
+  
+  address {
+    font-style: normal;
+    color: #777;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 5px;
+  }
+  
+  form {
+    display: grid;
+    gap: 10px;
+  }
+  
+  label {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  input,
+  textarea {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #2980b9;
+  }
+
+
+/* Estilos de footer */
+footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.redes-sociales a {
+    display: inline-block;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+.redes-sociales a:hover {
+    transform: scale(1.2);
+}
+
+#copy {
+    color: #000;
+    margin-top: 10px; /* Espacio entre los iconos y el texto */
+}
+
+
+
+@media only screen and (max-width: 375px) and (max-width: 667px) {
+    .fixed-nav {
+        flex-direction: column;
+        align-items: flex-start;
+        
+        
+    }
+
+    #servicios .card1 {
+        width: 100%; /* Ocupar todo el ancho en pantallas más pequeñas */
+        margin: 10px 0; /* Ajustar el margen */
+    }
+
+    .map-container {
+        width: 100%;
+        max-width: 1300px; /* Establece un ancho máximo para evitar que el mapa se agrande demasiado en pantallas grandes */
+        margin: 0 auto; /* Centra el contenedor */
+    }
+    .carousel-container {
+       
+        height: 27vh; /* Altura total de la ventana */
+       
+    }
+
+    
+
+    div.slide img {
+        width: 100%; /* Ajusta el ancho de la imagen dentro del contenedor */
+        height: 100%; /* Mantiene la proporción original de la imagen */
+        object-fit: cover; /* Cubre el contenedor, manteniendo la proporción y recortando según sea necesario */
+    }
+
+    
+
+
+    #alumnos .alumno {
+        width: 100%;
+        margin: 0px;
+    }
+
+    .corporation-title {
+        color: #f7f9fa;
+        margin: 0;
+        font-size: 1.5em;
+        font-family: 'Cursive', sans-serif;
+       
+    }
+
+    .toggle-menu {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #3498db;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 0;
+        padding: 1em;
+        width: 100%;
+        text-align: center;
+    }
+
+    .about {
+        grid-template-columns: 1fr; /* Cambia a una sola columna en pantallas más pequeñas */
+        text-align: center;
+    }
+
+    .about__img {
+        text-align: center;
+        order: -1; /* Cambia el orden para que la imagen aparezca antes del texto */
+        margin-top: 20px; /* Ajusta el margen superior según sea necesario */
+        width: 120%;
+    }
+
+
+    .testimony__item {
+        width: 80%; /* O el ancho deseado para pantallas más pequeñas */
+    }
+
+    .testimony__item:hover {
+        transform: none; /* Elimina la transformación al hacer hover en pantallas más pequeñas */
+        box-shadow: 0 15px 10px rgba(66, 66, 66, .5);
+    }
+
+    .testimony__img {
+        margin-right: 0; /* Elimina el margen derecho en pantallas más pequeñas */
+    }
+
+    .testimony__person {
+        flex-direction: column; /* Coloca los elementos uno debajo del otro */
+        align-items: flex-start; /* Ajusta la alineación */
+    }
+
+    .testimony__img {
+        margin-bottom: 15px; /* Agrega margen inferior a la imagen en pantallas más pequeñas */
+    }
+}
+
+@media only screen and (max-width: 414px) and (max-width: 896px) {
+    .fixed-nav {
+        flex-direction: column;
+        align-items: flex-start;
+        
+        
+    }
+
+    .map-container {
+        width: 100%;
+        max-width: 1300px; /* Establece un ancho máximo para evitar que el mapa se agrande demasiado en pantallas grandes */
+        margin: 0 auto; /* Centra el contenedor */
+    }
+    .carousel-container {
+       
+        height: 27vh; /* Altura total de la ventana */
+       
+    }
+
+    div.slide img {
+        width: 100%; /* Ajusta el ancho de la imagen dentro del contenedor */
+        height: 100%; /* Mantiene la proporción original de la imagen */
+        object-fit: cover; /* Cubre el contenedor, manteniendo la proporción y recortando según sea necesario */
+    }
+
+
+    #alumnos .alumno {
+        width: 100%;
+        margin: 0px;
+    }
+
+    .corporation-title {
+        color: #f7f9fa;
+        margin: 0;
+        font-size: 1.5em;
+        font-family: 'Cursive', sans-serif;
+       
+    }
+
+    .toggle-menu {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #3498db;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 0;
+        padding: 1em;
+        width: 100%;
+        text-align: center;
+    }
+
+    .about {
+        grid-template-columns: 1fr; /* Cambia a una sola columna en pantallas más pequeñas */
+        text-align: center;
+    }
+
+    .about__img {
+        text-align: center;
+        order: -1; /* Cambia el orden para que la imagen aparezca antes del texto */
+        width: 120%;
+    }
+
+    .testimony__item {
+        width: 80%; /* O el ancho deseado para pantallas más pequeñas */
+    }
+
+    .testimony__item:hover {
+        transform: none; /* Elimina la transformación al hacer hover en pantallas más pequeñas */
+        box-shadow: 0 15px 10px rgba(66, 66, 66, .5);
+    }
+
+    .testimony__img {
+        margin-right: 0; /* Elimina el margen derecho en pantallas más pequeñas */
+    }
+
+    .testimony__person {
+        flex-direction: column; /* Coloca los elementos uno debajo del otro */
+        align-items: flex-start; /* Ajusta la alineación */
+    }
+
+    .testimony__img {
+        margin-bottom: 15px; /* Agrega margen inferior a la imagen en pantallas más pequeñas */
+    }
+}
+
+@media only screen and (max-width: 430px) and (max-width: 932px) {
+    .fixed-nav {
+        flex-direction: column;
+        align-items: flex-start;
+        
+        
+    }
+
+    .map-container {
+        width: 100%;
+        max-width: 1300px; /* Establece un ancho máximo para evitar que el mapa se agrande demasiado en pantallas grandes */
+        margin: 0 auto; /* Centra el contenedor */
+    }
+    .carousel-container {
+       
+        height: 27vh; /* Altura total de la ventana */
+       
+    }
+
+    div.slide img {
+        width: 100%; /* Ajusta el ancho de la imagen dentro del contenedor */
+        height: 100%; /* Mantiene la proporción original de la imagen */
+        object-fit: cover; /* Cubre el contenedor, manteniendo la proporción y recortando según sea necesario */
+    }
+
+
+    #alumnos .alumno {
+        width: 100%;
+        margin: 0px;
+    }
+
+    .corporation-title {
+        color: #f7f9fa;
+        margin: 0;
+        font-size: 1.5em;
+        font-family: 'Cursive', sans-serif;
+       
+    }
+
+    .toggle-menu {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #3498db;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 0;
+        padding: 1em;
+        width: 100%;
+        text-align: center;
+    }
+
+    .about {
+        grid-template-columns: 1fr; /* Cambia a una sola columna en pantallas más pequeñas */
+        text-align: center;
+    }
+
+    .about__img {
+        text-align: center;
+        order: -1; /* Cambia el orden para que la imagen aparezca antes del texto */
+        width: 120%;
+    }
+
+    .testimony__item {
+        width: 80%; /* O el ancho deseado para pantallas más pequeñas */
+    }
+
+    .testimony__item:hover {
+        transform: none; /* Elimina la transformación al hacer hover en pantallas más pequeñas */
+        box-shadow: 0 15px 10px rgba(66, 66, 66, .5);
+    }
+
+    .testimony__img {
+        margin-right: 0; /* Elimina el margen derecho en pantallas más pequeñas */
+    }
+
+    .testimony__person {
+        flex-direction: column; /* Coloca los elementos uno debajo del otro */
+        align-items: flex-start; /* Ajusta la alineación */
+    }
+
+    .testimony__img {
+        margin-bottom: 15px; /* Agrega margen inferior a la imagen en pantallas más pequeñas */
+    }
+}
+
+@media only screen and (max-width: 768px) and (max-width: 1024px) {
+    .fixed-nav {
+        flex-direction: column;
+        align-items: flex-start;
+        
+        
+    }
+
+    .map-container {
+        width: 100%;
+        max-width: 1300px; /* Establece un ancho máximo para evitar que el mapa se agrande demasiado en pantallas grandes */
+        margin: 0 auto; /* Centra el contenedor */
+    }
+    .carousel-container {
+       
+        height: 27vh; /* Altura total de la ventana */
+       
+    }
+
+    div.slide img {
+        width: 100%; /* Ajusta el ancho de la imagen dentro del contenedor */
+        height: 100%; /* Mantiene la proporción original de la imagen */
+        object-fit: cover; /* Cubre el contenedor, manteniendo la proporción y recortando según sea necesario */
+    }
+
+
+    #alumnos .alumno {
+        width: 100%;
+        margin: 0px;
+    }
+
+    .corporation-title {
+        color: #f7f9fa;
+        margin: 0;
+        font-size: 1.5em;
+        font-family: 'Cursive', sans-serif;
+       
+    }
+
+    .toggle-menu {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #3498db;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 0;
+        padding: 1em;
+        width: 100%;
+        text-align: center;
+    }
+
+    .about {
+        grid-template-columns: 1fr; /* Cambia a una sola columna en pantallas más pequeñas */
+        text-align: center;
+    }
+
+    .about__img {
+        text-align: center;
+        order: -1; /* Cambia el orden para que la imagen aparezca antes del texto */
+    }
+
+    .testimony__item {
+        width: 80%; /* O el ancho deseado para pantallas más pequeñas */
+    }
+
+    .testimony__item:hover {
+        transform: none; /* Elimina la transformación al hacer hover en pantallas más pequeñas */
+        box-shadow: 0 15px 10px rgba(66, 66, 66, .5);
+    }
+
+    .testimony__img {
+        margin-right: 0; /* Elimina el margen derecho en pantallas más pequeñas */
+    }
+
+    .testimony__person {
+        flex-direction: column; /* Coloca los elementos uno debajo del otro */
+        align-items: flex-start; /* Ajusta la alineación */
+    }
+
+    .testimony__img {
+        margin-bottom: 15px; /* Agrega margen inferior a la imagen en pantallas más pequeñas */
+    }
+}
+
+@media only screen and (max-width: 820px) and (max-width: 1180px) {
+    .fixed-nav {
+        flex-direction: column;
+        align-items: flex-start;
+        
+        
+    }
+
+    .map-container {
+        width: 100%;
+        max-width: 1300px; /* Establece un ancho máximo para evitar que el mapa se agrande demasiado en pantallas grandes */
+        margin: 0 auto; /* Centra el contenedor */
+    }
+    .carousel-container {
+       
+        height: 27vh; /* Altura total de la ventana */
+       
+    }
+
+    div.slide img {
+        width: 100%; /* Ajusta el ancho de la imagen dentro del contenedor */
+        height: 100%; /* Mantiene la proporción original de la imagen */
+        object-fit: cover; /* Cubre el contenedor, manteniendo la proporción y recortando según sea necesario */
+    }
+
+
+    #alumnos .alumno {
+        width: 100%;
+        margin: 0px;
+    }
+
+    .corporation-title {
+        color: #f7f9fa;
+        margin: 0;
+        font-size: 1.5em;
+        font-family: 'Cursive', sans-serif;
+       
+    }
+
+    .toggle-menu {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #3498db;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 0;
+        padding: 1em;
+        width: 100%;
+        text-align: center;
+    }
+
+    .about {
+        grid-template-columns: 1fr; /* Cambia a una sola columna en pantallas más pequeñas */
+        text-align: center;
+    }
+
+    .about__img {
+        text-align: center;
+        order: -1; /* Cambia el orden para que la imagen aparezca antes del texto */
+    }
+
+    .testimony__item {
+        width: 80%; /* O el ancho deseado para pantallas más pequeñas */
+    }
+
+    .testimony__item:hover {
+        transform: none; /* Elimina la transformación al hacer hover en pantallas más pequeñas */
+        box-shadow: 0 15px 10px rgba(66, 66, 66, .5);
+    }
+
+    .testimony__img {
+        margin-right: 0; /* Elimina el margen derecho en pantallas más pequeñas */
+    }
+
+    .testimony__person {
+        flex-direction: column; /* Coloca los elementos uno debajo del otro */
+        align-items: flex-start; /* Ajusta la alineación */
+    }
+
+    .testimony__img {
+        margin-bottom: 15px; /* Agrega margen inferior a la imagen en pantallas más pequeñas */
+    }
+}
+
+@media only screen and (max-width: 1024px) and (max-width: 1366px) {
+    .fixed-nav {
+        flex-direction: column;
+        align-items: flex-start;
+        
+        
+    }
+
+    .map-container {
+        width: 100%;
+        max-width: 1300px; /* Establece un ancho máximo para evitar que el mapa se agrande demasiado en pantallas grandes */
+        margin: 0 auto; /* Centra el contenedor */
+    }
+    .carousel-container {
+       
+        height: 27vh; /* Altura total de la ventana */
+       
+    }
+
+    div.slide img {
+        width: 100%; /* Ajusta el ancho de la imagen dentro del contenedor */
+        height: 100%; /* Mantiene la proporción original de la imagen */
+        object-fit: cover; /* Cubre el contenedor, manteniendo la proporción y recortando según sea necesario */
+    }
+
+
+    #alumnos .alumno {
+        width: 100%;
+        margin: 0px;
+    }
+
+    .corporation-title {
+        color: #f7f9fa;
+        margin: 0;
+        font-size: 1.5em;
+        font-family: 'Cursive', sans-serif;
+       
+    }
+
+    .toggle-menu {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #3498db;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 0;
+        padding: 1em;
+        width: 100%;
+        text-align: center;
+    }
+
+    .about {
+        grid-template-columns: 1fr; /* Cambia a una sola columna en pantallas más pequeñas */
+        text-align: center;
+    }
+
+    .about__img {
+        text-align: center;
+        order: -1; /* Cambia el orden para que la imagen aparezca antes del texto */
+    }
+
+    .testimony__item {
+        width: 80%; /* O el ancho deseado para pantallas más pequeñas */
+    }
+
+    .testimony__item:hover {
+        transform: none; /* Elimina la transformación al hacer hover en pantallas más pequeñas */
+        box-shadow: 0 15px 10px rgba(66, 66, 66, .5);
+    }
+
+    .testimony__img {
+        margin-right: 0; /* Elimina el margen derecho en pantallas más pequeñas */
+    }
+
+    .testimony__person {
+        flex-direction: column; /* Coloca los elementos uno debajo del otro */
+        align-items: flex-start; /* Ajusta la alineación */
+    }
+
+    .testimony__img {
+        margin-bottom: 15px; /* Agrega margen inferior a la imagen en pantallas más pequeñas */
+    }
+}
+
+@media only screen and (max-width: 1024px) and (max-width: 600px) {
+    .fixed-nav {
+        flex-direction: column;
+        align-items: flex-start;
+         }
+
+   
+
+    .map-container {
+        width: 100%;
+        max-width: 1300px; /* Establece un ancho máximo para evitar que el mapa se agrande demasiado en pantallas grandes */
+        margin: 0 auto; /* Centra el contenedor */
+    }
+    .carousel-container {
+       
+        height: 27%; /* Altura total de la ventana */
+       
+    }
+
+    
+
+
+    #alumnos .alumno {
+        width: 100%;
+        margin: 0px;
+    }
+
+    .corporation-title {
+        color: #f7f9fa;
+        margin: 0;
+        font-size: 1.5em;
+        font-family: 'Cursive', sans-serif;
+       
+    }
+
+    .toggle-menu {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #3498db;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 0;
+        padding: 1em;
+        width: 100%;
+        text-align: center;
+    }
+
+    .about {
+        grid-template-columns: 1fr; /* Cambia a una sola columna en pantallas más pequeñas */
+        text-align: center;
+    }
+
+    .about__img {
+        text-align: center;
+        order: -1; /* Cambia el orden para que la imagen aparezca antes del texto */
+    }
+
+    .testimony__item {
+        width: 80%; /* O el ancho deseado para pantallas más pequeñas */
+    }
+
+    .testimony__item:hover {
+        transform: none; /* Elimina la transformación al hacer hover en pantallas más pequeñas */
+        box-shadow: 0 15px 10px rgba(66, 66, 66, .5);
+    }
+
+    .testimony__img {
+        margin-right: 0; /* Elimina el margen derecho en pantallas más pequeñas */
+    }
+
+    .testimony__person {
+        flex-direction: column; /* Coloca los elementos uno debajo del otro */
+        align-items: flex-start; /* Ajusta la alineación */
+    }
+
+    .testimony__img {
+        margin-bottom: 15px; /* Agrega margen inferior a la imagen en pantallas más pequeñas */
+    }
+}
+
+@media only screen and (max-width: 1280px) and (max-width: 800px) {
+    .fixed-nav {
+        flex-direction: column;
+        align-items: flex-start;
+         }
+
+   
+
+    .map-container {
+        width: 100%;
+        max-width: 1300px; /* Establece un ancho máximo para evitar que el mapa se agrande demasiado en pantallas grandes */
+        margin: 0 auto; /* Centra el contenedor */
+    }
+    .carousel-container {
+       
+        height: 27%; /* Altura total de la ventana */
+       
+    }
+
+    div.slide img {
+        width: 100%; /* Ajusta el ancho de la imagen dentro del contenedor */
+        height: 100%; /* Mantiene la proporción original de la imagen */
+        object-fit: cover; /* Cubre el contenedor, manteniendo la proporción y recortando según sea necesario */
+    }
+
+
+    #alumnos .alumno {
+        width: 100%;
+        margin: 0px;
+    }
+
+    .corporation-title {
+        color: #f7f9fa;
+        margin: 0;
+        font-size: 1.5em;
+        font-family: 'Cursive', sans-serif;
+       
+    }
+
+    .toggle-menu {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #3498db;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 0;
+        padding: 1em;
+        width: 100%;
+        text-align: center;
+    }
+
+    .about {
+        grid-template-columns: 1fr; /* Cambia a una sola columna en pantallas más pequeñas */
+        text-align: center;
+    }
+
+    .about__img {
+        text-align: center;
+        order: -1; /* Cambia el orden para que la imagen aparezca antes del texto */
+    }
+
+    .testimony__item {
+        width: 80%; /* O el ancho deseado para pantallas más pequeñas */
+    }
+
+    .testimony__item:hover {
+        transform: none; /* Elimina la transformación al hacer hover en pantallas más pequeñas */
+        box-shadow: 0 15px 10px rgba(66, 66, 66, .5);
+    }
+
+    .testimony__img {
+        margin-right: 0; /* Elimina el margen derecho en pantallas más pequeñas */
+    }
+
+    .testimony__person {
+        flex-direction: column; /* Coloca los elementos uno debajo del otro */
+        align-items: flex-start; /* Ajusta la alineación */
+    }
+
+    .testimony__img {
+        margin-bottom: 15px; /* Agrega margen inferior a la imagen en pantallas más pequeñas */
+    }
+}

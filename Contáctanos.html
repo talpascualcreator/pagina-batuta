@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corporación Batuta</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+</head>
+
+<body>
+<header>
+    <!-- Fixed Navigation Bar -->
+    <nav class="fixed-nav">
+        <h1 class="corporation-title"> Corporación Batuta</h1>
+        <div class="toggle-menu" onclick="toggleNav()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="Quiénes Somos.html">Quiénes Somos</a></li>
+          <li><a href="Formación.html">Formación</a></li>
+          <li><a href="Contáctanos.html">Contáctanos</a></li>
+          <li><a href="galeria.html">Galeria</a></li>
+      </ul>
+    </nav>
+    <div class="carousel-container">
+        <div class="carousel" id="imageCarousel">
+            <div class="slide">
+                <img src="imagenes/logo.png" alt="Imagen 1">
+            </div>
+            <div class="slide">
+                <img src="imagenes/batubebes.webp" alt="Imagen 2">
+            </div>
+            <div class="slide">
+                <img src="imagenes/cuerdas.webp" alt="Imagen 3">
+            </div>
+            <div class="slide">
+                <img src="imagenes/juvenil.webp" alt="Imagen 3">
+            </div>
+            <div class="slide">
+                <img src="imagenes/trombonistas.webp" alt="Imagen 3">
+            </div>
+            <div class="slide">
+                <img src="imagenes/reconocimiento.webp" alt="Imagen 3">
+            </div>
+        </header>
+        <main>
+            <section id="contacto">
+                <h1>CONTÁCTANOS</h1>
+                <p class="centered-text">Nuestro equipo de asesores está listo para resolver tus dudas.</p>
+            
+                <address>
+                  <strong>Corporación Batuta</strong><br>
+                  Dirección: Calle 46 #28-20, La Grama, Villavicencio, Meta<br>
+                  Teléfono: 300 3092615
+                </address>
+            
+                <p class="centered-text">Horario:</p>
+                <ul>
+                  <li>Domingo: Cerrado</li>
+                  <li>Lunes a viernes: 8 a.m.–6 p.m.</li>
+                  <li>Martes: 8 a.m.–6 p.m.</li>
+                  <li>Miércoles: 8 a.m.–6 p.m.</li>
+                  <li>Jueves: 8 a.m.–6 p.m.</li>
+                  <li>Viernes: 8 a.m.–6 p.m.</li>
+                  <li>Sábado: 8 a.m.–12 p.m.</li>
+                </ul>
+            
+                 <p>Te invitamos a unirte a nuestra comunidad en Corporación Batuta, donde cientos de estudiantes disfrutan de experiencias musicales únicas. Si tienes alguna pregunta sobre la estructura de nuestros cursos, planes de estudios, tarifas o métodos de pago, no dudes en ponerte en contacto con nosotros. Estamos aquí para atender tus inquietudes con gusto.</p>
+            
+                <h2>Corporación Batuta - Formación Musical Presencial</h2>
+                <p class="centered-text">Síguenos en Redes Sociales</p>
+            
+                <section id="formulario">
+                  <h3>ENVÍANOS UN MENSAJE:</h3>
+                  <form action="mail.php" method="post">
+                    <label for="nombre">Tu nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+            
+                    <label for="correo">Tu correo electrónico:</label>
+                    <input type="email" id="correo" name="correo" required>
+            
+                    <label for="asunto">Asunto:</label>
+                    <input type="text" id="asunto" name="asunto" required>
+            
+                    <label for="mensaje">Tu mensaje (opcional):</label>
+                    <textarea id="mensaje" name="mensaje"></textarea>
+            
+                    <button type="submit">Enviar mensaje</button>
+                  </form>
+                </section>
+            
+              </section>
+  
+  </main>
+           
+           
+
+   
+    <footer>
+        <div class="redes-sociales">
+          <a
+            href="https://www.facebook.com/CorporacionBatutaMeta/?locale=es_LA"
+            class="fa fa-facebook"
+            alt="Facebook"
+          ></a>
+          <a
+            href="https://twitter.com/batutametaco"
+            class="fa fa-twitter"
+            alt="x"
+          ></a>
+          <a
+            href="https://www.google.com/TrombonMaestro"
+            class="fa fa-google"
+            alt="Facebook"
+          ></a>
+          <a
+            href="https://www.youtube.com/@FundacionNacionalBatuta"
+            class="fa fa-youtube"
+            alt="YouTube"
+          ></a>
+          <a
+            href="https://www.linkedin.com/TrombonMaestro"
+            class="fa fa-linkedin"
+            alt="YouTube"
+          ></a>
+        </div>
+        <p id="copy">&copy; <span id="year"></span> CorporacionBatutaMeta</p>
+      </footer>
+
+    <script src="javascript/1.js"></script>
+   
+
+</body>
+
+</html>i
