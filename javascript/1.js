@@ -40,3 +40,15 @@ function toggleAnswer(answerId) {
 
   // Asigna el año actual al contenido del span
   yearSpan.textContent = currentYear;
+
+  const imagenes = document.querySelectorAll('.img');
+  const imgModal = document.querySelector('#imgModal')
+  
+  imagenes.forEach(img => {
+      img.addEventListener('click', (e) => {
+          imgModal.src = e.target.src  
+          e.target.setAttribute('data-toggle', 'modal')
+          e.target.setAttribute('data-target', '#exampleModal')    
+      })
+  })
+  
