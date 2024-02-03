@@ -190,7 +190,7 @@ main p {
     line-height: 1.5;
     font-weight: 300;
 }
-
+/* seccion de innovacion musical*/
 #alumnos .alumno {
     display: inline-block;
     width: calc(25% - 20px);
