@@ -195,31 +195,52 @@ main p {
     display: inline-block;
     width: calc(25% - 20px);
     margin: 50px;
-    padding: 10px;
+    padding: 20px;
     background-color: rgba(22, 24, 72, 0.7);
     border-radius: 10px;
     text-align: center;
     transition: background-color 0.3s ease;
     box-sizing: border-box;
-    height: 350px; /* Ajusta la altura según tus preferencias */
-    overflow: hidden; /* Evita que el contenido desborde y mantenga la altura fija */
+    position: relative;
+    overflow: hidden;
 }
 
 #alumnos .alumno img {
-    max-width: 100%;
+    max-width: 80%;
     border-radius: 50%;
     height: auto;
+    margin-bottom: 20px;
+}
+
+#alumnos .alumno h3 {
+    color: #0f0f0f;
+    font-size: 20px;
+    margin: 0 0 10px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
 }
 
 #alumnos .alumno p {
     color: #fff;
-    margin: 20px 0;
     font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+    max-height: 80px;
+    overflow: hidden;
 }
 
 #alumnos .alumno:hover {
     background-color: rgb(54, 57, 212);
 }
+
+#alumnos .alumno:hover p {
+    max-height: none;
+    overflow: visible;
+    transition: max-height 0.5s ease;
+}
+
 
 /* Estilos pagina quienes somo? */
 
