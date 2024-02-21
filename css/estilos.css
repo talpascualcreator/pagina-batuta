@@ -64,6 +64,14 @@ body {
     margin-top: 80px;
     padding: 20px;
 }
+/* estilos para el icono de batuta*/
+.logo {
+    width: 40px; /* ajusta el tamaño según tu preferencia */
+    height: auto; /* esto asegura que la imagen mantenga su proporción original */
+    margin-left: -15px; /* ajusta el espaciado entre el título y el logo */
+}
+
+
 * Estilos para el carrusel */
 body {
     margin: 0;
