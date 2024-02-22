@@ -546,8 +546,14 @@ main p {
     }
 
  /*estilos formacion guitarra*/
-
+ .image-container {
+    display: flex;
+  }
  
+  #guitarra img {
+    width:400px; /* Cambia el tamaño del ancho según lo necesites */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
 /* Estilos de footer */
 footer {
     background-color: rgba(0, 0, 0, 0.7);
