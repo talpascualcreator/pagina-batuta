@@ -678,6 +678,74 @@ main p {
     background-color: white;
 }
 
+/* ESTILOS CLASES DE PREORQUESTA*/
+
+.carousel3-container {
+    position: relative;
+    max-width:450px; /* Aumento del ancho máximo */
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel3-slides {
+    display: flex;
+}
+
+.slide3 {
+    display: none;
+    flex: 0 0 100%;
+    border: 5px solid rgba(0, 0, 0, 0.5); /* Borde aumentado */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6); /* Sombra más pronunciada y suavizada */
+}
+
+.slide3 img {
+    width: 100%;
+    height: auto;
+}
+
+.prev3, .next3 {
+    position:absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.8); /* Aumento del contraste */
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 15px; /* Aumento del tamaño de los botones */
+    z-index: 100;
+    border-radius: 50%; /* Estilo circular */
+}
+
+.prev3 {
+    left: 0; /* Posiciona el botón "prev" en la esquina superior izquierda */
+}
+
+.next3 {
+    right: 0;
+    
+}
+
+.dots3 {
+    text-align: center;
+    padding: 15px; /* Aumento del tamaño de los puntos */
+}
+
+.dot3 {
+    display: inline-block;
+    width: 15px; /* Aumento del tamaño de los puntos */
+    height: 15px; /* Aumento del tamaño de los puntos */
+    background-color: rgba(0, 0, 0, 0.8); /* Aumento del contraste */
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0 8px; /* Aumento del espacio entre los puntos */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8); /* Sombra para destacar */
+}
+
+.dot3.active {
+    background-color: white;
+}
+
+
 /* Estilos de footer */
 footer {
     background-color: rgba(0, 0, 0, 0.7);
