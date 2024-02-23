@@ -296,13 +296,34 @@
   <p>En la Corporación Batuta, las clases de guitarra ofrecen una experiencia única para sumergirse en el mundo de la música a través de este versátil instrumento. Nuestros instructores altamente capacitados guían a los estudiantes en el dominio de habilidades técnicas como la digitación y el rasgueo, al tiempo que exploran una amplia gama de estilos musicales, desde el clásico hasta el rock y el pop. Además de aprender a tocar la guitarra, nuestros estudiantes también desarrollan su creatividad, expresión artística y trabajo en equipo, lo que les permite crecer tanto musical como personalmente. ¡Únete a nuestras clases de guitarra y descubre el apasionante mundo de la música en la Corporación Batuta!</p>
   
 </section>
-<section id="guitarra" class="guitarra">
-        <img src="imagenes/imagen1.webp" alt="Imagen 1">
-        <img src="imagenes/imagen2.webp" alt="Imagen 2">
-        <img src="imagenes/imagen3.webp" alt="Imagen 3">
-        <img src="imagenes/imagen4.webp" alt="Imagen 4">
-        <img src="imagenes/imagen5.webp" alt="Imagen 5">
-    </section>
+<div class="carousel1-container">
+  <div class="carousel1-slides">
+      <div class="slide1" id="slide1">
+          <img src="imagenes/imagen1.webp" alt="Imagen 1">
+      </div>
+      <div class="slide1" id="slide2">
+          <img src="imagenes/imagen2.webp" alt="Imagen 2">
+      </div>
+      <div class="slide1" id="slide3">
+          <img src="imagenes/imagen3.webp" alt="Imagen 3">
+      </div>
+      <div class="slide1" id="slide4">
+          <img src="imagenes/imagen4.webp" alt="Imagen 3">
+      </div>
+      <div class="slide1" id="slide5">
+          <img src="imagenes/imagen5.webp" alt="Imagen 3">
+      </div>
+  </div>
+  <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+  <button class="next" onclick="moveSlide(1)">&#10095;</button>
+  <div class="dots">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
+  </div>
+</div>
   
   </main>
            

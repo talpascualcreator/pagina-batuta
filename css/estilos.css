@@ -546,14 +546,71 @@ main p {
     }
 
  /*estilos formacion guitarra*/
- .image-container {
-    display: flex;
-  }
- 
-  #guitarra img {
-    width:400px; /* Cambia el tamaño del ancho según lo necesites */
-    height: auto; /* Mantiene la proporción de la imagen */
+ .carousel1-container {
+    position: relative;
+    max-width:450px; /* Aumento del ancho máximo */
+    margin: auto;
+    overflow: hidden;
 }
+
+.carousel1-slides {
+    display: flex;
+}
+
+.slide1 {
+    display: none;
+    flex: 0 0 100%;
+    border: 5px solid rgba(0, 0, 0, 0.5); /* Borde aumentado */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6); /* Sombra más pronunciada y suavizada */
+}
+
+.slide1 img {
+    width: 100%;
+    height: auto;
+}
+
+.prev, .next {
+    position:absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.8); /* Aumento del contraste */
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 15px; /* Aumento del tamaño de los botones */
+    z-index: 100;
+    border-radius: 50%; /* Estilo circular */
+}
+
+.prev {
+    left: 0; /* Posiciona el botón "prev" en la esquina superior izquierda */
+}
+
+.next {
+    right: 0;
+    
+}
+
+.dots {
+    text-align: center;
+    padding: 15px; /* Aumento del tamaño de los puntos */
+}
+
+.dot {
+    display: inline-block;
+    width: 15px; /* Aumento del tamaño de los puntos */
+    height: 15px; /* Aumento del tamaño de los puntos */
+    background-color: rgba(0, 0, 0, 0.8); /* Aumento del contraste */
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0 8px; /* Aumento del espacio entre los puntos */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8); /* Sombra para destacar */
+}
+
+.dot.active {
+    background-color: white;
+}
+
 /* Estilos de footer */
 footer {
     background-color: rgba(0, 0, 0, 0.7);
